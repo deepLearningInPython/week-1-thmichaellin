@@ -54,7 +54,7 @@ def ReLu(array_in: np.array, cutoff: int = 0) -> np.array:
     """
 
     array_in[array_in < cutoff] = cutoff
-    return array
+    return array_in
 
 # -----------------------------------------------
 
