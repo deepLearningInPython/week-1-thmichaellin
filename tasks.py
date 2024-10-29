@@ -86,7 +86,7 @@ def neural_net_layer(array_in_2d: np.array, array_in_1d: np.array) -> np.array:
     """
     if not array_in_2d.shape[1] == array_in_1d.shape[0]:
         raise ValueError("Input arrays should have shapes (n, p) and (p)")
-    array_mult = array_in_2d.matmul(array_in_1d)
+    array_mult = np.matmul(array_in_2d, array_in_1d)
     return ReLu(array_mult)
 
 
