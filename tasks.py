@@ -24,7 +24,7 @@ def step(input: float) -> int:
         int: 1 if input > 0; else -1
     """
 
-    if input > 0:asdasdasdas
+    if input > 0:
         return 1
     return -1
 
