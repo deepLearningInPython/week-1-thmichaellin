@@ -40,6 +40,7 @@ def step(input: float) -> int:
 
 # Your code here:
 # -----------------------------------------------
+
 def ReLu(array_in: np.array, cutoff: int = 0) -> np.array:
     """
     Take numpy array and return numpy array of same length where all elements < cutoff are replaced
@@ -88,7 +89,5 @@ def neural_net_layer(array_in_2d: np.array, array_in_1d: np.array) -> np.array:
         raise ValueError("Input arrays should have shapes (n, p) and (p)")
     array_mult = np.matmul(array_in_2d, array_in_1d)
     return ReLu(array_mult)
-
-
 
 # ------------------------------------------
